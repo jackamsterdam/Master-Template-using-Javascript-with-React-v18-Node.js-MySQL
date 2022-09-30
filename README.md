@@ -5,8 +5,6 @@
 
 **If you want the Typescript version of this code or you want a template with Authentication and Authorization in Node.js and React (written in Typescript)  please see the other file. I have a template with Angular, Node and Mongodb as well.
 
-## Please contact me if you used my template and enjoyed it, or if you had any issues running the program - Linkedin: **https://www.linkedin.com/in/jack-amsterdam/**
-## If you had issues running the program or you enjoyed my project please contact me on Linkedin: https://www.linkedin.com/in/jack-amsterdam/
 ## If you used my template and enjoyed it (or had any issues), please contact me on Linkedin: **https://www.linkedin.com/in/jack-amsterdam/**
 
 Backend detailed information only:
@@ -19,7 +17,7 @@ Secondly, I uploaded the server as a package to NPM that can run while you get__
 
 [https://www.npmjs.com/package/__________-backend-for-_____-by-jack-in-javascript](https://www.npmjs.com/package/yammie-restaurant-backend-for-jones-by-jack-in-javascript). Further instructions on how to run in README.MD
 
-## Instructions to run the code on your local machine:
+# Instructions to run the code on your local machine:
 
 1. Git clone the repository.
 2. There is a folder called Database -import the sql file into your phpMyAdmin or your MySQL Workbench.
