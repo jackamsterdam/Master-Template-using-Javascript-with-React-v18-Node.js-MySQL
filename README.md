@@ -3,7 +3,8 @@
 
 ## ___________________ Frontend/Backend Project by Jack Amsterdam in JAVASCRIPT **&copy;**
 
-**If you want the Typescript version of this code please see the other file
+**If you want the Typescript version of this code or you want a template with Authentication and Authorization in Node.js and React (written in Typescript)  please see the other file. I have a template with Angular, node and Mongodb as well.
+
 
 ## If you had issues running the program or you enjoyed my project please contact me on Linkedin: https://www.linkedin.com/in/jack-amsterdam/
 
