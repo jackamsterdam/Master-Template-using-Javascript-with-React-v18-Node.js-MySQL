@@ -5,8 +5,9 @@
 
 **If you want the Typescript version of this code or you want a template with Authentication and Authorization in Node.js and React (written in Typescript)  please see the other file. I have a template with Angular, Node and Mongodb as well.
 
-
+## Please contact me if you used my template and enjoyed it, or if you had any issues running the program - Linkedin: **https://www.linkedin.com/in/jack-amsterdam/**
 ## If you had issues running the program or you enjoyed my project please contact me on Linkedin: https://www.linkedin.com/in/jack-amsterdam/
+## If you used my template and enjoyed it (or had any issues), please contact me on Linkedin: **https://www.linkedin.com/in/jack-amsterdam/**
 
 Backend detailed information only:
 
