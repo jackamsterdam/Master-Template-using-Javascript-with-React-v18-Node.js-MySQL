@@ -78,7 +78,7 @@ Another option - Need to download *"REST Client"* extension in VSCode and you ca
 
 # **EDGE CASES:**
 
-If there are no o_________ in the_________ I return 200 with a message - 'No ________ in the _______.
+If there are no _________ in the_________ I return 200 with a message - 'No ________ in the _______.
 
 I added Joi validation when adding a new __________:
 
