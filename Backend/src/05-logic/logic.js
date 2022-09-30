@@ -1,0 +1,160 @@
+const dal = require("../04-dal/dal")
+const ErrorModel = require("../03-models/error-model")
+
+// for photos only: 
+//const {v4 as uuid} = require('uuid')  //!(didnt check if this works!)
+// const safeDelete = require("../01-utils/safe-delete");
+
+
+
+// async function getAllProducts() {
+//     const sql = `SELECT 
+//                   ProductId AS id,
+//                   ProductName AS name, 
+//                   UnitPrice AS price , 
+//                   UnitsInStock AS stock,
+                  
+//                   ImageName AS imageName  //not sure
+  
+//                   FROM Products`
+
+//     const products = await dal.execute(sql);
+  
+//     return products 
+
+//   }
+
+
+// async function getOneProduct(id) {
+//     const sql = `SELECT * 
+//                  FROM Products
+//                  WHERE id = ?`
+//     //    or just get some and change name to match back and front: 
+//     const sql = `SELECT 
+//                  ProductId AS id,
+//                  ProductName AS name,
+//                  UnitPrice AS price,
+//                  UnitsInStock AS stock,
+//                  ImageName AS imageName // not sure
+//                  FROM Products
+//                  WHERE ProductId = ?`
+
+//     const products = await dal.execute(sql, [id])
+//     const product = products[0]
+//     if (!product) throw new ErrorModel(404, `Resource with id ${id} not found.`)
+//     return product
+// }
+
+
+// async function updateFullProduct(product) {
+  
+//     const errors = product.validatePut()
+//     if (errors) throw new ErrorModel(400, errors)
+  
+
+//     //handle image:
+//     const dbProduct = await getOneProduct(product.id)
+//     product.imageName = dbProduct.imageName   
+  
+//     if (product.image) {  
+//        safeDelete('./src/assets/images/products/' + product.imageName)
+//        const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
+//        product.imageName = uuid() + extension 
+//        await product.image.mv('./src/assets/images/products/' + product.imageName)
+//        delete product.image
+     
+//     }
+   
+//     const sql = `UPDATE Products
+//                  SET 
+//                  ProductName = ?, UnitPrice =  ?, UnitsInStock = ?
+//                  WHERE ProductId = ?`
+  
+//     const info = await dal.execute(sql, [product.name, product.price, product.stock, product.id])
+  
+  
+//     if (info.affectedRows === 0) throw new ErrorModel(404, `Resource with id ${product.id} not found.`)
+  
+//    return product
+  
+//   }
+  
+//   async function updatePartialProduct(product) {
+  
+//         const errors = product.validatePatch()
+//         if (errors) throw new ErrorModel(400, errors)
+       
+//         const dbProduct = await getOneProduct(product.id)
+ 
+  
+//         //handle image:
+//          product.imageName = dbProduct.imageName
+//          if (product.image) {       
+//           safeDelete('./src/assets/images/products/' + product.imageName)
+//           const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
+//           product.imageName = uuid() + extension 
+//           await product.image.mv('./src/assets/images/products/' + product.imageName)
+//           delete product.image
+//          }
+  
+   
+//         for (const prop in product) {
+//           if (product[prop]) {
+//             dbProduct[prop] = product[prop]
+//           }
+//         }
+ 
+//         const updatedProduct = await updateFullProduct(new ProductModel(dbProduct))
+  
+//         return updatedProduct 
+//   }
+
+
+
+// async function deleteProduct(id) {
+
+//    //we need to delete image from disk as well: 
+//     const product = await getOneProduct(id)
+
+//     safeDelete(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+
+//     const sql = `DELETE FROM Products 
+//                  WHERE ProductId = ?`
+    
+//     const info:OkPacket = await dal.execute(sql, [id])
+//     if (info.affectedRows === 0) throw new ErrorModel(404, `Resource with id ${id} not found.`)
+//   }
+  
+
+// bonus: 
+
+// async function cheaperThan(num) {
+//     const sql = `SELECT * FROM products 
+//                  WHERE UnitPrice >= ?
+//                  ORDER BY UnitPrice ASC;`
+
+//     const products = await dal.execute(sql, [num])
+//     return products 
+// }
+
+// async function expensiveThan(num) {
+//    const sql = `SELECT * FROM products 
+//                 WHERE UnitPrice <= ?
+//                 ORDER BY UnitPrice ASC;`
+
+//   const products = await dal.execute(sql, [num])
+//   return products 
+// }
+
+
+
+module.exports = {
+    
+}
+
+
+
+
+
+
+
