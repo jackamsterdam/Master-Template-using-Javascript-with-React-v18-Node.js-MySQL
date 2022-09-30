@@ -11,7 +11,7 @@ Backend detailed information only:
 
 *__________________ is expanding its services online and I was asked to build a REST API for the backend with Node.js for ____________. I then built the rest according to Node's Layered Architecture. This REST allows you to get all of _______________ as well as add a ___________. Code is production ready.*
 
-First of all the server is deployed on Heroku - **Go To -** [https://________-backend-____.herokuapp.com/api/](https://yammie-backend-jones.herokuapp.com/api/orders)_______  **to see ______________.**
+First of all the server is deployed on Heroku - **Go To -** [https://________-backend-____.herokuapp.com/api/](https://)_______  **to see ______________.**
 
 Secondly, I uploaded the server as a package to NPM that can run while you get________ and add _________. Can be downloaded here as a global package installation:
 
