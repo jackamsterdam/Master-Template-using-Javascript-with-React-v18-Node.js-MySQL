@@ -108,4 +108,4 @@ https://wakatime.com/@jackamsterdam
 
 https://www.npmjs.com/~jackamsterdam
 
-THANKS, AND HAVE A HAPPY DAY 😃
+😃 THANKS for reading, AND HAVE A HAPPY DAY 😃
