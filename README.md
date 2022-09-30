@@ -26,7 +26,7 @@ Secondly, I uploaded the server as a package to NPM that can run while you get__
 5. Backend Server will run for you on [http://localhost:3001](http://localhost:3001)
 6. Frontend Server will run for you on [http://localhost:3000](http://localhost:3000)
 
- *Possible error - You did not open two seperate terminals and not running both servers or you did not upload the database properly.
+ *Possible errors - You did not open two seperate terminals and not running both servers or you did not upload the database properly.
 
 ### *Summary of stages I took in building this project:*
 
