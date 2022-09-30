@@ -5,6 +5,8 @@
 
 **If you want the Typescript version of this code please see the other file
 
+## If you had issues running the program or you enjoyed my project please contact me on Linkedin: https://www.linkedin.com/in/jack-amsterdam/
+
 Backend detailed information only:
 
 *__________________ is expanding its services online and I was asked to build a REST API for the backend with Node.js for ____________. I then built the rest according to Node's Layered Architecture. This REST allows you to get all of _______________ as well as add a ___________. Code is production ready.*
