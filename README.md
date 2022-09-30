@@ -40,7 +40,7 @@ I exported the database and put the file in the Database folder. To run the prog
 2. Middleware folder - with the following middleware's  - an error handler to catch all errors thrown from any layer ( a catch all for all errors), I have a log-requests file which is middleware that logs every request to the logger.log file. I also have a sanitize file to prevent xss attacks so users can't for example send me a string with a script tag - it  will strip the tags.
 3. Model folder - this is how the data is coming and represented from the mySQL database ____________.
 
-I built an _____Model and an _______Model. So I am extending  the Base class _____Model with  _______Model to support ______s that are ______ for __________. I also have an errorModel class for error handling. These classes are used because I do not want to work with object literals. These object's are repeating themselves multiple times in my code so I made a class and then I made instances of a class. For example with the errorModel I have a status and message  and this saves me from making mistakes e.g. writing statussss instead of status. Additionally I am turning the request.body which is a literal object into an instance of an _______Model class so now that request.body has all the methods of that class (has all Joi validation methods for example). This makes my program more object oriented.
+I built an _____Model and an _______Model. So I am extending  the Base class _____Model with  _______Model to support ______s that are ______ for __________. I also have an ErrorModel class for error handling. These classes are used because I do not want to work with object literals. These objects are repeating themselves multiple times in my code so I made a class and then I made instances of a class. For example with the ErrorModel I have a status and message  and this saves me from making mistakes e.g. writing statussss instead of status. Additionally I am turning the request.body which is a literal object into an instance of an _______Model class so now that request.body has all the methods of that class (has all Joi validation methods for example). This makes my program more object oriented.
 
 # **Layers:**
 
@@ -52,7 +52,7 @@ Throughout the layers in each step I am returning a promise using async await sy
 5. Business Logic Layer folder - contains _________ logic file that gets All the ______ by ______ and returns a promise and also adds a new _______ and returns a promise.
 6. Controller Layer folder - contains orders controller - using express.Router() to have the routes here instead of in app.js. Contains_______"Enter number of Routes"____ routes that frontend can surf too.
 
-app.ts - Instead of having all the above in app.ts I separated everything into layers. Here we start a server and  listen on port 3001 for connections as defined in my **.env** file which holds my environment variables.
+app.js - Instead of having all the above in app.js I separated everything into layers. Here we start a server and  listen on port 3001 for connections as defined in my **.env** file which holds my environment variables.
 
 # **Security**
 
