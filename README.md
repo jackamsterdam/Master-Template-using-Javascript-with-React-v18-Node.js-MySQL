@@ -1,4 +1,4 @@
-## Yammie Restaurant Backend Project by Jack Amsterdam in JAVASCRIPT **&copy;**
+## Template by Jack Amsterdam in JAVASCRIPT for Full Stack **&copy;**
 
 **If you want the Typescript version of this code please see the other file
 
