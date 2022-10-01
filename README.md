@@ -18,8 +18,10 @@ Secondly, I uploaded the server as a package to NPM that can run while you get__
 [https://www.npmjs.com/package/__________-backend-for-_____-by-jack-in-javascript](https://www.npmjs.com/package/______). Further instructions on how to run in README.MD
 
 # Instructions to run the code on your local machine:
+<!--```bash -->
+<!-- ```Javascript -->
 
-```bash
+```
 1. Git clone the repository.
 2. There is a folder called Database -import the sql file into your phpMyAdmin or your MySQL Workbench.
 3. Open terminal by clicking on the Backend folder and type: npm i && npm start.
