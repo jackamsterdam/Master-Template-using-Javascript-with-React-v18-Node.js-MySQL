@@ -1,11 +1,11 @@
 ## Template by Jack Amsterdam in JAVASCRIPT for Full Stack Project **&copy;**
 
+![This is an image](Frontend/src/Assets/Images/logo.png)
+
 
 ## ___________________ Frontend/Backend Project by Jack Amsterdam in JAVASCRIPT **&copy;**
 
 **If you want the Typescript version of this code or you want a template with Authentication and Authorization in Node.js and React (written in Typescript)  please see the other file. I have a template with Angular, Node and Mongodb as well.
-
-![This is an image](Frontend/src/Assets/Images/logo.png)
 
 
 ## If you used my template and enjoyed it (or had any issues), please contact me on Linkedin: **https://www.linkedin.com/in/jack-amsterdam/**
