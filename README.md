@@ -1,4 +1,5 @@
 ## Template by Jack Amsterdam in JAVASCRIPT for Full Stack Project **&copy;**
+# This is mainly a template that I made to start a new Full Stack project using the MERN stack.
 
 ![This is an image](Frontend/src/Assets/Images/logo.png)
 
