@@ -1,5 +1,7 @@
 const dal = require("../04-dal/dal")
 const ErrorModel = require("../03-models/error-model")
+import path from "path";
+
 
 // for photos only: 
 //const {v4 as uuid} = require('uuid')  //!(didnt check if this works!)
@@ -45,6 +47,32 @@ const ErrorModel = require("../03-models/error-model")
 //     return product
 // }
 
+// async function addProduct(product) {
+ 
+//         const errors = product.validatePost()
+//         if (errors) throw new ErrorModel(400, errors)
+    
+//         //image handling: 
+//         if (product.image) {
+//           const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
+//           product.imageName = uuid() + extension
+//           await product.image.mv(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//           delete product.image
+//         }
+
+      
+//         const sql = `INSERT INTO Products VALUES(DEFAULT,?,?,?,?,?)`  //Insert all vs few: 
+//         const sql = `INSERT INTO Products(ProductName, UnitPrice, UnitsInStock)
+//                      VALUES(?, ?, ?)`
+    
+//       const info = await dal.execute(sql, [product.name, product.price, product.stock])
+    
+//       product.id = info.insertId
+//       console.log("product at end just before return", product);
+    
+//       return product  //btw we returning the image without the file image just the imageName
+//     }
+
 
 // async function updateFullProduct(product) {
   
@@ -57,10 +85,11 @@ const ErrorModel = require("../03-models/error-model")
 //     product.imageName = dbProduct.imageName   
   
 //     if (product.image) {  
-//        safeDelete('./src/assets/images/products/' + product.imageName)
+//        safeDelete(path.join(__dirname, '..', 'assets', 'images', product.imageName))
 //        const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
 //        product.imageName = uuid() + extension 
-//        await product.image.mv('./src/assets/images/products/' + product.imageName)
+//        await product.image.mv(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+
 //        delete product.image
      
 //     }
@@ -90,10 +119,12 @@ const ErrorModel = require("../03-models/error-model")
 //         //handle image:
 //          product.imageName = dbProduct.imageName
 //          if (product.image) {       
-//           safeDelete('./src/assets/images/products/' + product.imageName)
+//           safeDelete(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+
 //           const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
 //           product.imageName = uuid() + extension 
-//           await product.image.mv('./src/assets/images/products/' + product.imageName)
+//           await product.image.mv(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+
 //           delete product.image
 //          }
   
