@@ -56,7 +56,7 @@ import path from "path";
 //         if (product.image) {
 //           const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
 //           product.imageName = uuid() + extension
-//           await product.image.mv(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//           await product.image.mv(path.join(__dirname, '..', '.assets', 'images', product.imageName))
 //           delete product.image
 //         }
 
@@ -85,10 +85,10 @@ import path from "path";
 //     product.imageName = dbProduct.imageName   
   
 //     if (product.image) {  
-//        safeDelete(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//        safeDelete(path.join(__dirname, '..', '.assets', 'images', product.imageName))
 //        const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
 //        product.imageName = uuid() + extension 
-//        await product.image.mv(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//        await product.image.mv(path.join(__dirname, '..', '.assets', 'images', product.imageName))
 
 //        delete product.image
      
@@ -119,11 +119,11 @@ import path from "path";
 //         //handle image:
 //          product.imageName = dbProduct.imageName
 //          if (product.image) {       
-//           safeDelete(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//           safeDelete(path.join(__dirname, '..', '.assets', 'images', product.imageName))
 
 //           const extension = product.image.name.substring(product.image.name.lastIndexOf('.'))
 //           product.imageName = uuid() + extension 
-//           await product.image.mv(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//           await product.image.mv(path.join(__dirname, '..', '.assets', 'images', product.imageName))
 
 //           delete product.image
 //          }
@@ -147,7 +147,7 @@ import path from "path";
 //    //we need to delete image from disk as well: 
 //     const product = await getOneProduct(id)
 
-//     safeDelete(path.join(__dirname, '..', 'assets', 'images', product.imageName))
+//     safeDelete(path.join(__dirname, '..', '.assets', 'images', product.imageName))
 
 //     const sql = `DELETE FROM Products 
 //                  WHERE ProductId = ?`
